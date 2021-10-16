@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="../styles/area.css">
+	<link rel="stylesheet" href="../styles/breadcrumb.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<title>區域設備管理</title>
+</head>
+<body>
+	<nav class="nav">
+		<a href="../index.html"><img src="../img/logo.png" alt=""><h1>納維亞智慧校園</h1></a>
+		<i class="fas fa-bars" id="bars" onclick="toggle()"></i>
+	</nav>
+	<nav class="menu" id="menu">
+		<ul>
+			<li><a href="safety.html">安全視頻</a></li>
+			<li><a href="air.html">空氣監測</a></li>
+			<li><a href="set.html">權限設定</a></li>
+		</ul>
+		<ul>
+			<li><a href="login.html">登入</a></li>
+		</ul>
+	</nav>
+	<div class="wrap">
+		<ol class="breadcrumb">
+			<li><a href="../index.html">納維亞智慧校園</a></li>
+			<li><a href="./set.html">權限設定</a></li>
+			<li><a href="./List_Area.html">區域設備列表</a></li>
+			<li><a href="./setArea.html">區域設備設定</a></li>
+		</ol>
+	</div>
+	
+	<section class="time-period">
+		<form action="" method="">
+		<div class="time-period-s">
+			<div class="time-period-s-t">
+				音樂教室<i class="fas fa-trash" onclick="alertFn()"></i>
+			</div>
+			<div class="time-period-s-c">
+				<h2><span style="color: red">*</span>區域編號</h2><input type="text" value="Rm201">
+			</div>
+			<div class="time-period-s-c">
+				<h2><span style="color: red">*</span>區域名稱</h2><input type="text" value="音樂教室">
+			</div>
+			<div class="time-period-s-c">
+				<h2>&nbsp;&nbsp;區域圖示</h2><input type="file">
+			</div>
+			<div class="time-period-s-c">
+				<h2>&nbsp;&nbsp;顯示排序</h2><input type="text" value="1">
+			</div>
+			<div class="time-period-s-c">
+				<h2>&nbsp;&nbsp;綁定設備</h2>
+				<div class="bindEquipment">
+					<div class="bindOk">
+						<h3>已綁定</h3>
+						<select name="" multiple>
+							<option value="cam4">cam4</option>
+							<option value="cam4">cma5</option>
+						</select>
+					</div>
+					<i class="fas fa-arrows-alt-h"></i>
+					<div class="bindOff">
+							<h3>請選擇</h3>
+							<select name="" multiple>
+								<option value="cam1">cam1</option>
+								<option value="cam2">cma2</option>
+								<option value="cam3">cma3</option>
+								<option value="cam6">cma6</option>
+							</select>
+						</div>
+					
+				</div>
+			</div>
+			<div class="time-period-s-c">
+				<h2>&nbsp;&nbsp;啟用</h2>
+				<div class="timeBtnDiv">
+						<input type="checkbox"  checked id="toggleOnBtn">
+						<h6 id="toggleOn">開啟</h6>
+					</div>
+				</div>
+		</div>
+		
+		<div class="time-period-btn">
+				<a href="List_Area.html">取消</a>
+			<input type="submit" value="儲存">
+		</div>
+		</form>
+	</section>
+	<footer class="footer">
+		&copy;Navia. All rights reserved
+	</footer>
+<script src="../script.js"></script>
+<script>
+		function alertFn(){
+			confirm("確定要刪除嗎?????");
+		}
+const toggleOn = document.getElementById('toggleOn');
+const toggleOnBtn = document.getElementById("toggleOnBtn");
+if(toggleOnBtn.checked){
+	toggleOn.innerText = "開啟";
+}else{
+	toggleOn.innerText = "關閉";
+}
+toggleOnBtn.checked
+toggleOnBtn.addEventListener("click",()=>{
+	if(toggleOn.innerText=="開啟"){
+		toggleOn.innerText = "關閉";
+		
+		
+	}else{
+		toggleOn.innerText = "開啟";
+	}
+});
+</script>
+</body>
+</html>

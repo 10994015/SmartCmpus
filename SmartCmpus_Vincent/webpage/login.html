@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="../styles/login.css">
+	<link rel="stylesheet" href="../styles/breadcrumb.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<title>登入</title>
+</head>
+<body>
+	<nav class="nav">
+		<a href="../index.html"><img src="../img/logo.png" alt=""><h1>納維亞智慧校園</h1></a>
+		<i class="fas fa-bars" id="bars" onclick="toggle()"></i>
+	</nav>
+	<nav class="menu" id="menu">
+		<ul>
+			<li><a href="safety.html">安全視頻</a></li>
+			<li><a href="air.html">空氣監測</a></li>
+			<li><a href="set.html">權限設定</a></li>
+		</ul>
+		<ul>
+			<li><a href="login.html">登入</a></li>
+		</ul>
+	</nav>
+	<div class="wrap">
+		<ol class="breadcrumb">
+			<li><a href="../index.html">納維亞智慧校園</a></li>
+			<li><a href="./login.html">登入</a></li>
+		</ol>
+	</div>
+	<section class="login">
+		<div class="login-left"><img src="../img/logo.png" alt=""><h1>納維亞<br>智慧校園</h1></div>
+		
+		<form action="changepassword.html">
+			<h1>會員登入</h1>
+			<div><h2>帳號</h2><input type="text" placeholder="請輸入您的手機號碼"></div>
+			<div><h2>密碼</h2><input type="password" placeholder="請輸入您的密碼"></div>
+			<div class="forget"><div><input type="checkbox">記住我</div><a href="forgetpassword.html">忘記密碼?</a></div>
+			<input type="submit" value="登入">
+		</form>
+	</section>
+	<footer class="footer">
+		&copy;Navia. All rights reserved
+	</footer>
+<script src="../script.js"></script>
+</body>
+</html>

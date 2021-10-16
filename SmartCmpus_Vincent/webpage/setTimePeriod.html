@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/set.css">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="../styles/time_period.css">
+	<link rel="stylesheet" href="../styles/breadcrumb.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<title>時段管理</title>
+	<style>
+		.c{
+			justify-content: space-around
+		}
+	</style>
+</head>
+<body>
+	<nav class="nav">
+		<a href="../index.html"><img src="../img/logo.png" alt=""><h1>納維亞智慧校園</h1></a>
+		<i class="fas fa-bars" id="bars" onclick="toggle()"></i>
+	</nav>
+	<nav class="menu" id="menu">
+		<ul>
+			<li><a href="safety.html">安全視頻</a></li>
+			<li><a href="air.html">空氣監測</a></li>
+			<li><a href="set.html">權限設定</a></li>
+		</ul>
+		<ul>
+			<li><a href="login.html">登入</a></li>
+		</ul>
+	</nav>
+	<div class="wrap">
+		<ol class="breadcrumb">
+			<li><a href="../index.html">納維亞智慧校園</a></li>
+			<li><a href="./set.html">權限設定</a></li>
+			<li><a href="./List_TimePeriod.html">開放時段列表</a></li>
+			<li><a href="./setTimePeriod.html">開放時段設定</a></li>
+		</ol>
+	</div>
+	
+	<section class="time-period">
+
+		<div class="set-s">
+            <div class="set-s-b" ><h2>區域名稱：音樂教室</h2></div>
+        </div>
+		<form action="" method="" name="form1">
+		<div class="time-period-s">
+			<div class="time-period-s-t" onclick="set_toggle(0)">
+				群組：校長<i class="fas fa-plus-circle"></i>
+			</div>
+			<div id="set-s-toggle0" class="set-s-toggle">
+				<div class="time-period-s-c timeChk">
+					<h2>是否開放</h2>
+					<input type="checkbox"  id="time-period-toggle1">
+					<p id="time-period-on1">啟用</p>
+				</div>
+				<div class="time-period-s-c time-period-label">
+						<h2>星期</h2>
+						<div class="labelClassItem">
+								<label for="week1"><input type="checkbox" checked id="week1">一</label>
+								<label for="week2"><input type="checkbox" checked id="week2">二</label>
+								<label for="week3"><input type="checkbox" checked id="week3">三</label>
+								<label for="week4"><input type="checkbox" checked id="week4">四</label>
+								<label for="week5"><input type="checkbox" checked id="week5">五</label>
+								<label for="week6"><input type="checkbox" checked id="week6">六</label>
+								<label for="week4"><input type="checkbox" checked id="week7">日</label>
+							</div>
+				</div>
+				<div class="time-period-s-c">
+					<h2>上午開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;06:00-12:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-s-c">
+					<h2>下午開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;12:00-20:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-s-c">
+					<h2>夜間開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;20:00-06:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-btn">
+					<a href="List_TimePeriod.html">取消</a>
+					<input type="submit" value="儲存">
+				</div>
+			</div>
+		</div>
+		</form>
+
+		<form action="" method="" name="form2">
+		<div class="time-period-s">
+			<div class="time-period-s-t" onclick="set_toggle(1)">
+				群組：校務人員<i class="fas fa-plus-circle"></i>
+			</div>
+			<div id="set-s-toggle1" class="set-s-toggle">
+				<div class="time-period-s-c timeChk">
+					<h2>是否開放</h2>
+					<input type="checkbox"  id="time-period-toggle1">
+					<p id="time-period-on1">啟用</p>
+				</div>
+				<div class="time-period-s-c time-period-label">
+						<h2>星期</h2>
+						<div class="labelClassItem">
+								<label for="week1"><input type="checkbox" checked id="week1">一</label>
+								<label for="week2"><input type="checkbox" checked id="week2">二</label>
+								<label for="week3"><input type="checkbox" checked id="week3">三</label>
+								<label for="week4"><input type="checkbox" checked id="week4">四</label>
+								<label for="week5"><input type="checkbox" checked id="week5">五</label>
+								<label for="week6"><input type="checkbox" checked id="week6">六</label>
+								<label for="week4"><input type="checkbox" checked id="week7">日</label>
+							</div>
+				</div>
+				<div class="time-period-s-c">
+					<h2>上午開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;06:00-12:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-s-c">
+					<h2>下午開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;12:00-20:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-s-c">
+					<h2>夜間開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;20:00-06:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-btn">
+					<a href="List_TimePeriod.html">取消</a>
+					<input type="submit" value="儲存">
+				</div>
+			</div>
+		</div>
+		</form>
+
+		<form action="" method="" name="form3">
+		<div class="time-period-s">
+			<div class="time-period-s-t" onclick="set_toggle(2)">
+				群組：老師<i class="fas fa-plus-circle"></i>
+			</div>
+			<div id="set-s-toggle2" class="set-s-toggle">
+				<div class="time-period-s-c timeChk">
+					<h2>是否開放</h2>
+					<input type="checkbox"  id="time-period-toggle1">
+					<p id="time-period-on1">啟用</p>
+				</div>
+				<div class="time-period-s-c time-period-label">
+						<h2>星期</h2>
+						<div class="labelClassItem">
+								<label for="week1"><input type="checkbox" checked id="week1">一</label>
+								<label for="week2"><input type="checkbox" checked id="week2">二</label>
+								<label for="week3"><input type="checkbox" checked id="week3">三</label>
+								<label for="week4"><input type="checkbox" checked id="week4">四</label>
+								<label for="week5"><input type="checkbox" checked id="week5">五</label>
+								<label for="week6"><input type="checkbox" checked id="week6">六</label>
+								<label for="week4"><input type="checkbox" checked id="week7">日</label>
+							</div>
+				</div>
+				<div class="time-period-s-c">
+					<h2>上午開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;06:00-12:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-s-c">
+					<h2>下午開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;12:00-20:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-s-c">
+					<h2>夜間開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;20:00-06:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-btn">
+					<a href="List_TimePeriod.html">取消</a>
+					<input type="submit" value="儲存">
+				</div>
+			</div>
+		</div>
+		</form>
+
+		<form action="" method="" name="form4">
+		<div class="time-period-s">
+			<div class="time-period-s-t" onclick="set_toggle(3)">
+				群組：家長<i class="fas fa-plus-circle"></i>
+			</div>
+			<div id="set-s-toggle3" class="set-s-toggle">
+				<div class="time-period-s-c timeChk">
+					<h2>是否開放</h2>
+					<input type="checkbox"  id="time-period-toggle1">
+					<p id="time-period-on1">啟用</p>
+				</div>
+				<div class="time-period-s-c time-period-label">
+						<h2>星期</h2>
+						<div class="labelClassItem">
+								<label for="week1"><input type="checkbox" checked id="week1">一</label>
+								<label for="week2"><input type="checkbox" checked id="week2">二</label>
+								<label for="week3"><input type="checkbox" checked id="week3">三</label>
+								<label for="week4"><input type="checkbox" checked id="week4">四</label>
+								<label for="week5"><input type="checkbox" checked id="week5">五</label>
+								<label for="week6"><input type="checkbox" checked id="week6">六</label>
+								<label for="week4"><input type="checkbox" checked id="week7">日</label>
+							</div>
+				</div>
+				<div class="time-period-s-c">
+					<h2>上午開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;06:00-12:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-s-c">
+					<h2>下午開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;12:00-20:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-s-c">
+					<h2>夜間開放時間<br/>
+					<span style="font-size: 16px; color:#999">&nbsp;20:00-06:00</span>
+					</h2>
+					<input type="time">-<input type="time">
+				</div>
+				<div class="time-period-btn">
+					<a href="List_TimePeriod.html">取消</a>
+					<input type="submit" value="儲存">
+				</div>
+			</div>
+		</div>
+		</form>
+
+
+	</section>
+	<footer class="footer">
+		&copy;Navia. All rights reserved
+	</footer>
+<script src="../script.js"></script>
+<script>
+		
+
+		const timeTitle = document.getElementsByClassName('time-period-s-t')[0];
+		const timeClass = document.getElementsByClassName('time-period-labelClass')[0];
+		console.log(timeTitle.innerText);
+		if(timeTitle.innerText==="家長"){
+			timeClass.style.display = "none";
+		}
+
+
+		const on = document.getElementById('time-period-on1');
+		const checkbox = document.getElementById('time-period-toggle1');
+		if(checkbox.checked){
+			on.innerText = "啟用";
+		}else{
+			on.innerText = "關閉";
+		}
+		checkbox.addEventListener("click",()=>{
+			if(on.innerText === "啟用"){
+			on.innerText = "關閉";
+			}else{
+				on.innerText = "啟用";
+			}
+		});
+		</script>
+</body>
+</html>

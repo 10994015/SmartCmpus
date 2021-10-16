@@ -1,0 +1,162 @@
+.time-period{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:  50px 0;
+}
+.time-period-s{
+	margin-bottom: 20px;
+}
+.time-period-s-t{
+	width: 600px;
+	height: 35px;
+	border: 1px #000 solid;
+	background: rgba(230, 230, 230, 1.0);
+	text-align: center;
+	line-height: 35px;
+	position: relative;
+}
+.time-period-s-t i{
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.time-period-s-c{
+	border-bottom: 1px #000 solid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 50px;
+
+	padding: 5px 30px;
+}
+.time-period-s-c input[type="text"]{
+	width:250px;
+	height: 25px;
+}
+.time-period-s-c h2{
+	font-size: 20px;
+}
+.time-period-s-c h2,.time-period-s-c p,.time-period-s-c input{
+	margin: 0 30px;
+}
+.time-period-s-c input[type="checkbox"]{
+	position: relative;
+	width: 50px;
+	height: 25px;
+	appearance: none;
+	background: #c6c6c6;
+	outline: none;
+	border-radius: 20px;
+	box-shadow:  inset 0 0 5px rgba(0, 0, 0, .2);
+	transition: .5s;
+	cursor: pointer;
+}
+.time-period-s-c input:checked[type="checkbox"]{
+	background: #03a9f4;
+}
+.time-period-s-c input[type="checkbox"]:before{
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 20px;
+	top: 0;
+	left: 0;
+	background: #fff;
+	transform: scale(1.1);
+	box-shadow:  0 2px 5px rgba( 0, 0, 0, .2);
+	transition: .5s;
+}
+.time-period-s-c input:checked[type="checkbox"]:before{
+	left: 25px;
+}
+.time-period-btn{
+	display: flex;
+	justify-content: center;
+}
+.time-period-btn input{
+	width: 100px;
+	height: 35px;
+	outline: none;
+	background: #03A9F4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	margin: 30px 20px 0 20px;
+	font-size: 14px;
+	line-height: 35px;
+}
+.time-period-btn input[type="reset"]{
+	background-color: #999;
+}
+.time-period-btn a{
+	width: 100px;
+	height: 35px;
+	outline: none;
+	background: #999;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	margin: 30px 20px 0 20px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 35px;
+	font-size: 14px;
+}
+
+.time-period-btn input:hover{
+	background: #006FFF;
+}
+.time-period-btn input[type="reset"]:hover,
+.time-period-btn a:hover{
+	background-color: #555;
+}
+.bindEquipment{
+	width:250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.bindEquipment select{
+	width:80px;
+	height: 120px;
+	border:1px #000 solid;
+	list-style: none;
+	padding: 5px;
+}
+.bindOk, .bindOff{
+	margin: 0 25px;
+}
+.timeBtnDiv{
+	width:250px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.timeBtnDiv h6{
+	font-size: 14px;
+	margin: 0 10px;
+}
+@media screen and (max-width: 600px){
+	.time-period-s-t{
+	width: 98%;
+	
+}
+.time-period-s-c h2,.time-period-s-c p,.time-period-s-c input{
+	margin: 0 10px;
+}
+.time-period-s-c{
+	
+	padding: 0 10px;
+}
+}
+@media screen and (max-width: 385px){
+	.time-period-s-c h2 {
+    font-size: 14px;
+}
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="../styles/set.css">
+	<link rel="stylesheet" href="../styles/breadcrumb.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<title>權限設定</title>
+</head>
+<body>
+	<nav class="nav">
+		<a href="../index.html"><img src="../img/logo.png" alt=""><h1>納維亞智慧校園</h1></a>
+		<i class="fas fa-bars" id="bars" onclick="toggle()"></i>
+	</nav>
+	<nav class="menu" id="menu">
+		<ul>
+			<li><a href="safety.html">安全視頻</a></li>
+			<li><a href="air.html">空氣監測</a></li>
+			<li><a href="set.html">權限設定</a></li>
+		</ul>
+		<ul>
+			<li><a href="login.html">登入</a></li>
+		</ul>
+	</nav>
+	<div class="wrap">
+		<ol class="breadcrumb">
+			<li><a href="../index.html">納維亞智慧校園</a></li>
+			<li><a href="./set.html">權限設定</a></li>
+			<li><a href="./List_Authority.html">管理人員列表</a></li>
+		</ol>
+	</div>
+	<div class="set-title"><img src="../img/set.png" alt="">權限設定</div>
+	<section class="set">
+			<div class="set-s">
+				<!--	<div class="set-s-b"  onclick="set_toggle(0)">管理人員設定<i class="fas fa-plus-circle"></i></div>  -->
+                    <div class="set-s-b" >管理人員列表</div>
+					<!--	<div id="set-s-toggle0" class="set-s-toggle">  -->
+								<div class="set-s-s">
+										<p class="setNo">1</p>
+										<p class="setName">Mandy Chang</p>
+										<p class="setPhone">0987123456</p>
+										<div class="setPositionMore setPositionMore0">
+												<div class="setPositionMoreTEXT"></div>
+											<div class="setPositionBox"></div>
+										</div>
+										<div class="setPosition">		
+											<span>校長</span>
+											<span>校務人員</span>
+											<span>老師</span>
+											<span>教職員</span>
+											
+										</div>
+										<input type="checkbox" class="setInput" checked>
+										<a href="setAuthority.html"">設定</a>
+									</div>
+									<div class="set-s-s">
+											<p class="setNo">12</p>
+											<p class="setName">劉德華</p>
+											<p class="setPhone">0987123456</p>
+											<div class="setPositionMore setPositionMore1">
+												<div class="setPositionMoreTEXT"></div>
+												<div class="setPositionBox"></div>
+											</div>
+											<div class="setPosition">		
+													<span>校長</span>
+													<span>校務人員</span>
+													<span>老師</span>
+													
+													
+												</div>
+											<input type="checkbox" class="setInput" checked>
+											<a href="setAuthority.html">設定</a>
+										</div>
+										<div class="setFooter">
+												<p>共7筆</p>
+												<span>
+												<!--	<i class="fas fa-caret-left"></i>	-->
+												<a href="javascript:;"><i class="fas fa-step-backward" style="font-size:16px ;"></i></a>
+												<a href="javascript:;"><i class="fas fa-caret-left" style="font-size: 24px;"></i></a>
+													<ul class="pageIdx">
+														<a href="javascript:;"><li>1</li></a>
+														<a href="javascript:;"><li>2</li></a>
+														<a href="javascript:;"><li>3</li></a>
+														<a href="javascript:;"><li>4</li></a>
+														<a href="javascript:;"><li>5</li></a>
+													</ul>
+												 <!--	<i class="fas fa-caret-right"></i>	-->
+												 <a href="javascript:;"><i class="fas fa-caret-right" style="font-size: 24px;"></i></a>
+												 <a href="javascript:;"><i class="fas fa-step-forward" style="font-size: 16px;"></i></a>
+												</span>
+												<a href="addAuthority.html" class="set-s-add">新增</a>
+											</div>
+					<!--	</div>  -->
+						
+				</div>
+<!--				
+		<div class="set-s">
+			<div class="set-s-b"  onclick="set_toggle(1)">家長連線<i class="fas fa-plus-circle"></i></div>
+				<div id="set-s-toggle1" class="set-s-toggle">
+
+						<div class="set-s-s">
+								<p>1</p>
+								<p>蔡依玲</p>
+								<p>0987123456</p>
+								<span>大象班家長</span>
+								<input type="checkbox" class="setInput" checked>
+								<a href="setParent.html"">設定</a>
+							</div>
+							<div class="set-s-s">
+									<p>2</p>
+									<p>劉德華</p>
+									<p>0987123456</p>
+									<span>大象班家長</span>
+									<input type="checkbox" class="setInput" checked>
+									<a href="setParent.html"">設定</a>
+								</div>
+
+						<div class="setFooter">
+								<p>共7筆</p>
+								<span>
+									<i class="fas fa-caret-left"></i>
+									<ul>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+									</ul>
+									<i class="fas fa-caret-right"></i>
+								</span>
+								<a href="addParent.html" class="set-s-add">新增</a>
+							</div>
+				</div>
+		</div>
+
+		<div class="set-s">
+				<div class="set-s-b" onclick="set_toggle(4)">區域設備管理<i class="fas fa-plus-circle"></i></div>
+					<div id="set-s-toggle4" class="set-s-toggle">
+						<div class="set-s-s setCenter">
+							音樂教室<a href="area.html">設定</a>
+						</div>
+						<div class="set-s-s setCenter">
+							大門櫃台<a href="area.html">設定</a>
+						</div>
+						<div class="set-s-s setCenter">
+							櫻桃班<a href="area.html">設定</a>
+						</div>
+
+						<div class="setFooter">
+								<p>共7筆</p>
+								<span>
+									<i class="fas fa-caret-left"></i>
+									<ul>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+									</ul>
+									<i class="fas fa-caret-right"></i>
+								</span>
+								<a href="addArea.html" class="set-s-add">新增</a>
+							</div>
+					</div>
+			</div>
+
+		<div class="set-s">
+			<div class="set-s-b" onclick="set_toggle(2)">開放時段管理<i class="fas fa-plus-circle"></i></div>
+				<div id="set-s-toggle2" class="set-s-toggle">
+					<div class="set-s-s setCenter">
+						家長<a href="time_period.html">設定</a>
+					</div>
+					<div class="set-s-s setCenter">
+						老師<a href="time_period.html">設定</a>
+					</div>
+					<div class="set-s-s setCenter">
+						園長<a href="time_period.html">設定</a>
+					</div>
+					<div class="set-s-s setCenter">
+						校務人員<a href="time_period.html">設定</a>
+					</div>
+					<div class="setFooter">
+							<p>共7筆</p>
+							<span>
+								<i class="fas fa-caret-left"></i>
+								<ul>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+								</ul>
+								<i class="fas fa-caret-right"></i>
+							</span>
+							<a href="addTime_period.html" class="set-s-add">新增</a>
+						</div>
+				</div>
+		</div>
+		<div class="set-s">
+				<div class="set-s-b"  onclick="set_toggle(5)">班級群組設定<i class="fas fa-plus-circle"></i></div>
+					<div id="set-s-toggle5" class="set-s-toggle">
+							<div class="set-s-s">
+									<p>1</p>
+									<p>110-大象班</p>
+									<input type="checkbox" class="setInput" checked>
+									<a href="setClass.html"">設定</a>
+								</div>
+								<div class="set-s-s">
+										<p>2</p>
+										<p>110-長頸鹿班</p>
+										<input type="checkbox" class="setInput" checked>
+										<a href="setClass.html">設定</a>
+									</div>
+									<div class="setFooter">
+											<p>共7筆</p>
+											<span>
+												<i class="fas fa-caret-left"></i>
+												<ul>
+													<li>1</li>
+													<li>2</li>
+													<li>3</li>
+												</ul>
+												<i class="fas fa-caret-right"></i>
+											</span>
+											<a href="addSetClass.html" class="set-s-add">新增</a>
+										</div>
+					</div>
+			</div>
+-->
+		
+		
+	</section>
+	<footer class="footer">
+		&copy;Navia. All rights reserved
+	</footer>
+<script src="../set.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

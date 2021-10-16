@@ -1,0 +1,203 @@
+*{
+	font-family: sans-serif;
+}
+.safety{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.safety .safety-top{
+	display: flex;
+	margin: 30px 0;
+}
+.safety .safety-top div{
+	display: flex;
+	align-items: center;
+	margin: 0 100px;
+}
+.safety .safety-top i{
+	font-size: 24px;
+	margin-right: 10px
+}
+.safety .safety-top div select{
+	margin: 0 20px;
+	width: 120px;
+	height: 30px;
+}
+.safety .safety-top p{
+	font-size: 18px;
+}
+.safety .safety-top img{
+	width: 20px;
+	height: 20px;
+	margin: 0 20px;
+	animation: load 2s infinite;
+}
+@keyframes load {
+	0%{
+		transform:rotate(0deg);
+	}
+
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+
+
+.safety video{
+	width: 800px;
+	height:auto;
+	max-height: 400px;
+	margin: 20px 0;
+}
+.safety div a:nth-child(1){
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	color: #666;
+	font-weight: 600;
+	width: 100px;
+	height: 40px;
+	border: 1px #000 solid;
+	background: #fff;
+	border-radius: 5px;
+	margin: 50px 100px;
+}
+.safety div{
+	display: flex;
+}
+.safety select{
+	width: 120px;
+	height: 30px;
+	font-weight: 500;
+}
+.safety select option{
+	text-align: center;
+
+}
+.safety div a:nth-child(2){
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	width: 100px;
+	height: 40px;
+	background: #1E98D7;
+	border-radius: 5px;
+	margin: 50px 100px;
+}
+.safety table{
+	border:3px solid #3E72D9;
+	margin: 30px 0;
+}
+.safety table tr:nth-child(1){
+	background: #DCF5FF;
+}
+.safety table tr:nth-child(2){
+	background: #fff;
+}
+.safety table td{
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	border:3px solid #3E72D9;
+	font-weight: 600;
+	font-size: 18px;
+}
+.safety table td i{
+	color: #00AF27;
+	margin-right: 5px;
+}
+@media screen and (max-width: 800px){
+	.safety video{
+	width: 95%;
+	
+	margin: 20px 0;
+}
+.safety div a:nth-child(1){
+	margin: 50px 20px;
+}
+.safety div a:nth-child(2){
+	margin: 50px 20px;
+}
+.safety .safety-top{
+	width: 100%;
+}
+	.safety .safety-top div{
+		padding: 0 10px;
+		margin:0;
+	}
+	.safety .safety-top i{
+		font-size: 24px;
+		margin-right: 10px
+	}
+	.safety .safety-top div select{
+		margin: 0 25px;
+		width: 100px;
+		height: 30px;
+	}
+	.safety .safety-top p{
+		font-size: 16px;
+	}
+
+	.safety table td{
+	width: 150px;
+	}
+
+
+}
+
+@media screen and (max-width: 415px){
+	.safety video{
+	width: 95%;
+	
+	margin: 20px 0;
+}
+.safety div a:nth-child(1){
+	margin: 50px 20px;
+}
+.safety div a:nth-child(2){
+	margin: 50px 20px;
+}
+
+.safety .safety-top{
+	display: flex;
+	flex-direction: column;
+	
+}
+.safety .safety-top div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.safety .safety-top div select{
+	margin: 10px 0;
+	width: 120px;
+	height: 35px;
+}
+.safety .safety-top div p{
+	margin-bottom: 10px;
+}
+
+.safety table td{
+	width: 23%;
+	}
+	.air-center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+
+}
+
+}
