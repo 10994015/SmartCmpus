@@ -27,7 +27,6 @@
 .time-period-s-c{
 	border-bottom: 1px #000 solid;
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 50px;
@@ -39,7 +38,7 @@
 	height: 25px;
 }
 .time-period-s-c h2{
-	font-size: 20px;
+	font-size: 16px;
 }
 .time-period-s-c h2,.time-period-s-c p,.time-period-s-c input{
 	margin: 0 30px;
@@ -117,22 +116,13 @@
 	background-color: #555;
 }
 .bindEquipment{
-	width:250px;
+	width:300px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	
 }
-.bindEquipment select{
-	width:80px;
-	height: 120px;
-	border:1px #000 solid;
-	list-style: none;
-	padding: 5px;
-}
-.bindOk, .bindOff{
-	margin: 0 25px;
-}
+
 .timeBtnDiv{
 	width:250px;
 	display: flex;
