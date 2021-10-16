@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.1/themes/prism.min.css" rel="stylesheet">
+	<link href="dist/style.css" rel="stylesheet">
+	<link href="dist/dual-listbox.css" rel="stylesheet">
 	<link rel="stylesheet" href="../styles/style.css">
 	<link rel="stylesheet" href="../styles/area.css">
 	<link rel="stylesheet" href="../styles/breadcrumb.css">
@@ -53,26 +57,11 @@
 			</div>
 			<div class="time-period-s-c">
 				<h2>&nbsp;&nbsp;綁定設備</h2>
-				<div class="bindEquipment">
-					<div class="bindOk">
-						<h3>已綁定</h3>
-						<select name="" multiple>
-							<option value="cam4">cam4</option>
-							<option value="cam4">cma5</option>
-						</select>
-					</div>
-					<i class="fas fa-arrows-alt-h"></i>
-					<div class="bindOff">
-							<h3>請選擇</h3>
-							<select name="" multiple>
-								<option value="cam1">cam1</option>
-								<option value="cam2">cma2</option>
-								<option value="cam3">cma3</option>
-								<option value="cam6">cma6</option>
-							</select>
-						</div>
-					
-				</div>
+				<select class="select1" multiple>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
 			</div>
 			<div class="time-period-s-c">
 				<h2>&nbsp;&nbsp;啟用</h2>
@@ -114,6 +103,12 @@ toggleOnBtn.addEventListener("click",()=>{
 		toggleOn.innerText = "開啟";
 	}
 });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.1/prism.min.js"></script>
+<script src="dist/dual-listbox.js"></script>
+<script>
+	var dlb1 = new DualListbox('.select1');
+
 </script>
 </body>
 </html>

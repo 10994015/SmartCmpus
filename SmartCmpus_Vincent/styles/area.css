@@ -27,6 +27,7 @@
 .time-period-s-c{
 	border-bottom: 1px #000 solid;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 50px;
