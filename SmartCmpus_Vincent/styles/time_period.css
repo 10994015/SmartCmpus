@@ -152,7 +152,7 @@
 
 @media screen and (max-width: 600px){
 	.time-period-s-t{
-	width: 98%;
+	width: 350px;
 	
 }
 .time-period-s-c h2,.time-period-s-c p,.time-period-s-c input{
@@ -163,6 +163,17 @@
 	padding: 0 10px;
 }
 }
+
+@media screen and (max-width: 450px){
+	.time-period-s-c h2,.time-period-s-c p,.time-period-s-c input[type="time"]{
+		margin: 0 5px;
+	}
+	.time-period-s-c{
+	justify-content: center;
+	
+}
+}
+
 @media screen and (max-width: 385px){
 	.time-period-s-c h2 {
     font-size: 14px;
