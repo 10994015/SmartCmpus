@@ -1,0 +1,62 @@
+.main{
+    height: auto;
+    padding: 50px 0;
+}
+.safetyList{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.safetyList .safetyItem{
+    width: 30%;
+    height: 250px;
+    position: relative;
+    margin:10px;
+    
+}
+.safetyList .safetyItem img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.safetyList .safetyItem p{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: 40px;
+    background: rgba(255, 236, 155, .7);
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color:#000;
+    font-weight: 600;
+}
+.safetyList .safetyItem:hover > img{
+    opacity: .7;
+    transition: .5s;
+}
+.safetyList .safetyItem:hover > p{
+    transition: .5s;
+    background: rgba(255, 236, 155, 1);
+
+}
+@media screen and (max-width:680px){
+    .safetyList .safetyItem{
+        width:45%;
+        height: 250px;
+        position: relative;
+        margin:10px;
+        
+    }
+}
+@media screen and (max-width:500px){
+    .safetyList .safetyItem{
+        width:90%;
+        height: 250px;
+        position: relative;
+        margin:10px;
+        
+    }
+}
